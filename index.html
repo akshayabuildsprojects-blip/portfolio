@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akshaya Mahesh Kumar · Technical Product Manager</title>
+<meta name="description" content="Technical product manager. Zero to one, then to scale: 10+ years taking products from first prototype to production, across firmware, enterprise platforms and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
+<style>
+:root{--accent:#2747E8}
+body{margin:0;background:#F1ECE1;color:#141414;font-family:'Archivo',system-ui,sans-serif}
+a{color:#141414}a:hover{color:#5A5650}
+*{box-sizing:border-box}
+.disp{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:0.01em;line-height:0.92;margin:0}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;letter-spacing:0.06em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border:3px solid #141414;background:var(--accent);color:#FFFFFF;text-decoration:none;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;box-shadow:5px 5px 0 #141414;transition:transform .12s,box-shadow .12s}
+.btn:hover{color:#FFFFFF;transform:translate(2px,2px);box-shadow:3px 3px 0 #141414}
+.btn.ghost{background:#FBF8F1;color:#141414}
+.btn.ghost:hover{color:#141414}
+.chip{min-height:48px;padding:0 20px;border:3px solid #141414;background:#FBF8F1;color:#141414;font-family:'Anton',Impact,sans-serif;font-size:20px;letter-spacing:0.03em;text-transform:uppercase;cursor:pointer;transform:skewX(-8deg);box-shadow:4px 4px 0 #141414}
+.chip.on{background:var(--accent);color:#FFFFFF}
+.chip span{display:inline-block;transform:skewX(8deg)}
+.card{display:flex;flex-direction:column;gap:18px;padding:24px;background:#FBF8F1;border:3px solid #141414;box-shadow:8px 8px 0 #141414}
+.icon{flex:none;width:76px;height:76px;border:3px solid #141414;display:flex;align-items:center;justify-content:center;background-color:#FBF8F1;background-image:radial-gradient(#141414 0.8px,transparent 0.8px);background-size:6px 6px}
+.icon svg{background:#FBF8F1;padding:6px}
+.title{font-family:'Anton',Impact,sans-serif;font-size:32px;line-height:1;text-transform:uppercase;margin:0;overflow-wrap:anywhere}
+.sub{margin:6px 0 0;font-size:15px;color:#4A4741}
+.sub b{color:#141414}
+.badge{flex:none;align-self:flex-start;padding:4px 10px;background:var(--accent);color:#FFFFFF;border:2px solid #141414;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;box-shadow:3px 3px 0 #141414}
+.badge.y{background:#F2C230;color:#141414}
+.body{margin:0;font-size:17px;line-height:1.5}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{padding:7px 12px;border:2px solid #141414;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;background:#F1ECE1}
+.foot{margin-top:auto;padding-top:16px;border-top:2px solid #BDB7AC;display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-weight:700;font-size:15px}
+.foot .star{color:var(--accent)}
+.foot a{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.06em;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:36px}
+.sechead{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;padding-bottom:18px;border-bottom:3px solid #141414;margin-bottom:36px}
+.stat{flex:1 1 150px;padding:18px;border:3px solid #141414;background:#FBF8F1;box-shadow:5px 5px 0 #141414}
+.media{margin:-24px -24px 0;aspect-ratio:16/9;border-bottom:3px solid #141414;display:flex;align-items:center;justify-content:center;background-color:#E6E0D3;background-image:repeating-linear-gradient(45deg,rgba(20,20,20,0.06) 0 2px,transparent 2px 14px)}
+.media span{font-size:12px;padding:6px 10px;background:#FBF8F1;border:2px solid #141414}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.schem{position:relative;flex-direction:column;gap:10px;padding:16px 12px 30px}
+.flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px}
+.node{border:2px solid #141414;background:#FBF8F1;padding:6px 8px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;text-align:center;line-height:1.25}
+.node.hi{background:var(--accent);color:#FFFFFF}
+.node.dim{background:transparent;border-style:dashed;color:#4A4741}
+.arr{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14px}
+.nda{position:absolute;left:10px;bottom:6px;margin:0;font-size:10px;color:#4A4741}
+.navlink{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; background-color: #F1ECE1; background-image: linear-gradient(rgba(20,20,20,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(20,20,20,0.05) 1px, transparent 1px); background-size: 32px 32px">
+
+<header style="border-bottom: 3px solid #141414; background: #F1ECE1">
+<nav aria-label="Primary" style="max-width: 1280px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+<a href="#top" style="text-decoration: none; display: flex; align-items: baseline; gap: 10px">
+<span class="disp" style="font-size: 34px">Akshaya</span>
+<span class="disp" style="font-size: 34px; color: var(--accent)">M.K.</span>
+</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap; margin-left: auto; align-items: center">
+<a class="navlink" href="#work">Work</a>
+<a class="navlink" href="#path">Path</a>
+<a class="navlink" href="#toolkit">Toolkit</a>
+<a class="navlink" href="#contact">Contact</a>
+<a class="btn" href="#">Résumé ↓</a>
+</div>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" style="max-width: 1280px; margin: 0 auto; padding: 72px 24px 64px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p class="mono" style="margin: 0; font-size: 14px; color: #4A4741">Technical product manager · AI products &amp; platforms · 0→1 builder</p>
+<h1 id="hero-title" class="disp" style="font-size: clamp(40px, 7.5vw, 108px)">I turn rough prototypes into <span style="color: var(--accent)">products people use.</span></h1>
+<p style="margin: 0; max-width: 640px; font-size: 21px; line-height: 1.5"><b>Zero to one, then to scale.</b> 10+ years taking products from first prototype to production, across firmware, enterprise platforms and AI.</p>
+<div style="display: flex; gap: 18px; flex-wrap: wrap">
+<a class="btn" href="#work">See the work →</a>
+<a class="btn ghost" href="#contact">Get in touch</a>
+</div>
+</div>
+
+<aside class="card" style="flex: 1 1 340px; max-width: 440px; transform: rotate(1.5deg)" aria-label="Profile card">
+<div style="display: flex; gap: 18px; align-items: center">
+<div class="icon" style="width: 96px; height: 96px">
+<span class="mono" style="font-size: 11px; background: #FBF8F1; padding: 4px 6px; text-align: center">[YOUR<br>PHOTO]</span>
+</div>
+<div>
+<p class="title" style="font-size: 34px">Akshaya Mahesh Kumar</p>
+<p class="sub"><b>Technical Product Manager</b> · Atlanta, GA</p>
+</div>
+</div>
+<p class="body">I take AI and platform products from rough prototype to production, and I can build alongside the team that ships them.</p>
+<div class="tags">
+<span class="tag">AI products</span>
+<span class="tag">Platforms</span>
+<span class="tag">0→1</span>
+<span class="tag">B2B</span>
+</div>
+<div class="foot">
+<span><span class="star">★</span> Open to technical PM roles</span>
+<span>◆ Georgia Tech EMBA ’26</span>
+</div>
+</aside>
+
+<div style="flex: 1 1 100%; display: flex; flex-wrap: wrap; gap: 24px">
+<div class="stat"><p class="disp" style="font-size: 52px">10<span style="color: var(--accent)">+</span> Yrs</p><p class="mono" style="margin: 8px 0 0; font-size: 12px">Building products</p></div>
+<div class="stat"><p class="disp" style="font-size: 52px">~60%</p><p class="mono" style="margin: 8px 0 0; font-size: 12px">US broker adoption, 0→1 product</p></div>
+<div class="stat"><p class="disp" style="font-size: 52px">2<span style="color: var(--accent)">×</span></p><p class="mono" style="margin: 8px 0 0; font-size: 12px">Foundational hire</p></div>
+<div class="stat"><p class="disp" style="font-size: 52px">10</p><p class="mono" style="margin: 8px 0 0; font-size: 12px">Team led, at peak</p></div>
+</div>
+</section>
+
+<section id="work" aria-labelledby="work-title" style="border-top: 3px solid #141414; border-bottom: 3px solid #141414; background: #F1ECE1">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px 24px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+<h2 id="work-title" class="disp" style="font-size: 44px">Browsing</h2>
+<div role="group" aria-label="Filter work" style="display: flex; gap: 16px; flex-wrap: wrap; padding: 4px 6px 8px">
+<button type="button" class="chip on" aria-pressed="true" data-filter="all"><span>All · 16</span></button>
+<button type="button" class="chip" aria-pressed="false" data-filter="product"><span>Product &amp; AI</span></button>
+<button type="button" class="chip" aria-pressed="false" data-filter="ventures"><span>Builds &amp; Ventures</span></button>
+<button type="button" class="chip" aria-pressed="false" data-filter="lead"><span>Campus &amp; Creative</span></button>
+
+</div>
+</div>
+</section>
+
+<div style="max-width: 1280px; margin: 0 auto; padding: 64px 24px 24px; display: flex; flex-direction: column; gap: 80px">
+
+<div data-group="product">
+<section aria-labelledby="g1">
+<div class="sechead">
+<span class="disp" style="font-size: 72px; color: var(--accent)">01</span>
+<h3 id="g1" class="disp" style="font-size: clamp(36px, 6vw, 56px)">Product &amp; AI</h3>
+<p class="mono" style="margin: 0 0 8px auto; font-size: 13px; color: #4A4741">Aon · Georgia Tech · Denso Wave</p>
+</div>
+<div class="grid">
+
+<p class="mono" style="grid-column: 1 / -1; margin: 0 0 -12px; font-size: 13px; color: #4A4741; display: flex; align-items: center; gap: 14px">AI &amp; agents<span style="flex: 1; height: 2px; background: #BDB7AC"></span></p>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Flow: researcher dashboard sets personas and scenarios, persona locked at session start; participant speaks in German or English through a voice module to Gemini Live or Qwen3-Omni; audio, transcripts and timestamps are recorded"><div class="flow"><div class="node">Researcher dashboard<br>personas · scenarios</div><div class="arr" aria-hidden="true">→</div><div class="node">Persona locked<br>at session start</div></div><div class="flow"><div class="node">Participant<br>speaks DE / EN</div><div class="arr" aria-hidden="true">→</div><div class="node">Voice<br>module</div><div class="arr" aria-hidden="true">→</div><div class="node dim">Gemini Live<br>or Qwen3-Omni</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node hi">Audio · transcripts · timestamps</div></div><p class="nda mono">Prototype · live link soon</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 10v4M7 7v10M11 4v16M15 8v8M19 11v2"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Voice AI Research Platform</h4><p class="sub"><b>Georgia Tech, School of Modern Languages</b> · Atlanta · 2026–now</p></div>
+<span class="badge">Prototype</span>
+</div>
+<p class="body">Spoken German and English conversations with an AI persona locked in character, so researchers can measure how its style shapes participants' politeness, directness and apologies. One app: Gemini Live to prototype, self-hosted Qwen3-Omni on Georgia Tech GPUs for the study.</p>
+<div class="tags"><span class="tag">Realtime voice</span><span class="tag">Persona control</span><span class="tag">Gemini Live</span><span class="tag">Qwen3-Omni</span><span class="tag">React / Node</span></div>
+<div class="foot"><span><span class="star">★</span> Persona locked per session</span><span>◆ 6 scenarios</span><span>◆ Live link soon</span>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Flow: Pivot API consolidates over 1,000 opportunities weekly; on-demand refresh has Gemini search NSF and DOE webinars, NOIs and RFIs plus Grants.gov forecasts; the LLM summarizes and extracts, producing matched alerts for over 100 faculty"><div class="flow"><div class="node">Pivot API<br>weekly</div><div class="arr" aria-hidden="true">→</div><div class="node">Consolidated<br>1,000+ / week</div></div><div class="flow"><div class="node dim">Refresh<br>on demand</div><div class="arr" aria-hidden="true">→</div><div class="node">Gemini: NSF / DOE webinars,<br>NOIs, RFIs + Grants.gov forecasts</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node">LLM summarizes<br>+ extracts</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Matched alerts<br>100+ faculty</div></div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4.5-4.5"></path><path d="M9 11h4M11 9v4"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Grant Discovery Agent</h4><p class="sub"><b>Georgia Tech, Brook Byers Institute</b> · Atlanta · 2025–now</p></div>
+<span class="badge">In use</span>
+</div>
+<p class="body">Consolidates 1,000+ funding opportunities a week from Pivot. On demand, Gemini hunts for new NSF and DOE webinars, NOIs and RFIs, refreshes Grants.gov forecasts, and summarizes what's relevant. Discovery showed faculty ignored the dashboard, so I shipped matched alerts instead.</p>
+<div class="tags"><span class="tag">Agentic workflow</span><span class="tag">Gemini</span><span class="tag">Pivot API</span><span class="tag">Grants.gov</span><span class="tag">Customer discovery</span></div>
+<div class="foot"><span><span class="star">★</span> 1,000+ opportunities / week</span><span>◆ 100+ faculty</span><span>◆ Hours → minutes</span></div>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Schematic: policy PDF chunked and chained by field location, sent to a lite LLaMA self-hosted on Databricks; expected fields in, extracted fields out; constraints were cost, storage, privacy and run windows"><div class="flow"><div class="node">Policy<br>PDF</div><div class="arr" aria-hidden="true">→</div><div class="node">Chunked + chained<br>by field location</div><div class="arr" aria-hidden="true">→</div><div class="node">Lite LLaMA<br>self-hosted · Databricks</div></div><div class="flow"><div class="node">Expected fields</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Extracted fields</div></div><div class="flow"><div class="node dim">Cost</div><div class="node dim">Storage</div><div class="node dim">Privacy</div><div class="node dim">Run windows</div></div><p class="nda mono">Schematic · details under NDA</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path><path d="M8 9h8M8 12h5"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">LLM Extraction PoC</h4><p class="sub"><b>Aon</b> · Singapore · 2023–2025</p></div>
+<span class="badge">AI</span>
+</div>
+<p class="body">Proved an LLM could replace our NLP extraction within enterprise limits on cost, storage and privacy. A self-hosted lite LLaMA on Databricks pulls the expected fields from documents chunked by where each field appears. It extracted accurately without fine-tuning, and I designed how it would be hosted, started daily and kept running on schedule.</p>
+<div class="tags"><span class="tag">LLaMA</span><span class="tag">Databricks</span><span class="tag">Self-hosted</span><span class="tag">Chunking</span><span class="tag">Privacy</span></div>
+<div class="foot"><span><span class="star">★</span> First to replace NLP</span><span>◆ Recommended to senior stakeholders</span></div>
+</article>
+
+<p class="mono" style="grid-column: 1 / -1; margin: 24px 0 -12px; font-size: 13px; color: #4A4741; display: flex; align-items: center; gap: 14px">Platforms &amp; 0→1<span style="flex: 1; height: 2px; background: #BDB7AC"></span></p>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Schematic: spreadsheets taking hours replaced by a modeling suite for forecasts, cost of risk, large-loss models and peer benchmarks, with human review, producing over 1,000 risk models"><div class="flow"><div class="node dim">Spreadsheets<br>hours per model</div><div class="arr" aria-hidden="true">→</div><div class="node">Modeling suite</div></div><div class="flow"><div class="node dim">Forecasts</div><div class="node dim">Cost of risk</div><div class="node dim">Large-loss models</div><div class="node dim">Peer benchmarks</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node">Human review</div><div class="arr" aria-hidden="true">→</div><div class="node hi">1,000+ risk models</div></div><p class="nda mono">Schematic · details under NDA</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 20V4M4 20h16"></path><path d="M7 16l4-5 3 3 5-7"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Actuarial Modeling Suite</h4><p class="sub"><b>Aon</b> · Singapore · 2023–2025</p></div>
+</div>
+<p class="body">US actuaries spent hours building risk models by hand in spreadsheets. I built the tools that replaced them: loss forecasting, collateral and total-cost-of-risk calculations, large-loss modeling, and benchmarking clients against their peers, with human review built in. Led a 2–3 person team to deliver it.</p>
+<div class="tags"><span class="tag">Forecasting</span><span class="tag">Risk modeling</span><span class="tag">Benchmarking</span><span class="tag">Human-in-the-loop</span></div>
+<div class="foot"><span><span class="star">★</span> 1,000+ risk models</span><span>◆ Led a team of 2–3</span></div>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Schematic: a shared library of tables, async chaining and icons used by three other teams"><div class="flow"><div class="node hi">Shared library<br>tables · async chaining · icons</div></div><div class="flow"><div class="arr" aria-hidden="true">↓</div><div class="arr" aria-hidden="true">↓</div><div class="arr" aria-hidden="true">↓</div></div><div class="flow"><div class="node">Team A</div><div class="node">Team B</div><div class="node">Team C</div></div><p class="nda mono">Schematic · details under NDA</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Shared Component Library</h4><p class="sub"><b>Aon</b> · Singapore · 2023–2025</p></div>
+</div>
+<p class="body">Built reusable Angular components for the innovation center, including data tables, async command chaining and icons, so other teams didn't have to rebuild them. Three teams beyond mine built on them.</p>
+<div class="tags"><span class="tag">Angular</span><span class="tag">Reusable UI</span><span class="tag">Platform thinking</span></div>
+<div class="foot"><span><span class="star">★</span> Adopted by 3 other teams</span></div>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Schematic: quote PDFs go through OCR and NLP extraction across about 30 formats, then a reviewer checks data types and source pages, producing validated fields"><div class="flow"><div class="node">Quote PDFs</div><div class="arr" aria-hidden="true">→</div><div class="node">OCR + NLP extraction<br>~30 formats</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node">Reviewer check<br>data type · source page</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Validated fields</div></div><p class="nda mono">Schematic · details under NDA</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 11h7M9 14h7M9 17h4"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Quote Extraction Platform</h4><p class="sub"><b>Aon</b> · Singapore · 2021–2025</p></div>
+<span class="badge">0→1</span>
+</div>
+<p class="body">Every renewal meant hours of reading insurer quotes line by line. I took a single broker's prototype, architected it and built it end to end into the platform about 60% of Aon's US brokers used to turn those PDFs into verified data in minutes.</p>
+<div class="tags"><span class="tag">NLP</span><span class="tag">Full-stack</span><span class="tag">Architecture</span><span class="tag">Human-in-the-loop</span></div>
+<div class="foot"><span><span class="star">★</span> ~60% of US brokers</span><span>◆ Hours → minutes</span><span>◆ Gen 1, before the LLM</span></div>
+</article>
+
+<p class="mono" style="grid-column: 1 / -1; margin: 24px 0 -12px; font-size: 13px; color: #4A4741; display: flex; align-items: center; gap: 14px">Engineering<span style="flex: 1; height: 2px; background: #BDB7AC"></span></p>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Schematic: C/C++ firmware over UART, CAN, ADC and DAC driving digital I/O and serial modules, through MCU migrations and an RTOS redesign"><div class="flow"><div class="node">C/C++ firmware</div><div class="arr" aria-hidden="true">→</div><div class="node dim">UART</div><div class="node dim">CAN</div><div class="node dim">ADC</div><div class="node dim">DAC</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node hi">Digital I/O + serial modules</div></div><div class="flow"><div class="node dim">MCU migrations</div><div class="node dim">RTOS redesign</div></div><p class="nda mono">Schematic · details under NDA</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M8 4l-5 8 5 8"></path><path d="M16 4l5 8-5 8"></path><path d="M14 3l-4 18"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">PLC Firmware &amp; I/O Modules</h4><p class="sub"><b>Denso Wave</b> · Singapore · 2015–2021</p></div>
+<span class="badge">Foundational hire</span>
+</div>
+<p class="body">I joined Denso Wave Singapore as a foundational hire, with no firmware foundation to inherit. Over six years I wrote and owned the firmware for 6 industrial products, then carried it through every chip migration and a redesign of the real-time OS underneath.</p>
+<div class="tags"><span class="tag">C/C++</span><span class="tag">Python</span><span class="tag">UART</span><span class="tag">CAN</span><span class="tag">ADC / DAC</span><span class="tag">RTOS</span></div>
+<div class="foot"><span><span class="star">★</span> 6 products</span><span>◆ 6 years</span></div>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Schematic: one month of manual testing replaced by an automated rig, cutting it to a few days, which became the foundation for future firmware products"><div class="flow"><div class="node dim">Manual testing<br>1 month</div><div class="arr" aria-hidden="true">→</div><div class="node">Automated<br>test rig</div><div class="arr" aria-hidden="true">→</div><div class="node hi">A few days</div></div><div class="flow"><div class="node dim">Foundation for future firmware products</div></div><p class="nda mono">Schematic · details under NDA</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><rect x="6" y="6" width="12" height="12"></rect><rect x="10" y="10" width="4" height="4"></rect><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Automated Test Rig</h4><p class="sub"><b>Denso Wave</b> · Singapore · 2015–2021</p></div>
+<span class="badge y">Foundation</span>
+</div>
+<p class="body">Every firmware release meant a month of manual functional testing. I built an automated test rig that cut it to a few days, and it became the foundation for testing every firmware product that followed. Early in my career, I led the 10-person validation and release team that ran it, owning project plans, resource allocation and staffing.</p>
+<div class="tags"><span class="tag">Test automation</span><span class="tag">Functional testing</span><span class="tag">Team lead</span><span class="tag">Project planning</span></div>
+<div class="foot"><span><span class="star">★</span> 1 month → a few days</span><span>◆ Led a team of 10</span><span>◆ Used on every new product</span></div>
+</article>
+
+</div>
+</section>
+</div>
+
+<div data-group="ventures">
+<section aria-labelledby="g2">
+<div class="sechead">
+<span class="disp" style="font-size: 72px; color: var(--accent)">02</span>
+<h3 id="g2" class="disp" style="font-size: clamp(36px, 6vw, 56px)">Builds &amp; Ventures</h3>
+<p class="mono" style="margin: 0 0 8px auto; font-size: 13px; color: #4A4741">Capstone · live apps · hackathons</p>
+</div>
+<div class="grid">
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 13l2 2 4-4"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Verifee</h4><p class="sub"><b>Georgia Tech EMBA capstone</b> · Atlanta · 2026</p></div>
+<span class="badge">Capstone</span>
+</div>
+<p class="body">My capstone for the Georgia Tech Executive MBA. Preliminary transcript verification for admissions: NLP parses an applicant's PDF transcript, maps courses to the target school, runs a gap analysis and anchors record metadata on Solana for tamper evidence.</p>
+<div class="tags"><span class="tag">Admissions</span><span class="tag">NLP</span><span class="tag">Blockchain</span></div>
+<div class="foot"><span><span class="star">★</span> Building now</span><span>◆ GT + Vanderbilt interviews</span><a href="#" data-todo="verifee-link">Open app ↗</a></div>
+</article>
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7l4 3-1.5 4.5h-5L8 10z"></path><path d="M12 3v4M21 10l-5 0M3 10h5M9.5 14.5L7 19M14.5 14.5L17 19"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">FanReady 2026</h4><p class="sub"><b>Solo build</b> · Atlanta · 2026</p></div>
+<span class="badge">Live</span>
+</div>
+<p class="body">Bilingual World Cup matchday-planning app, designed and shipped solo.</p>
+<div class="tags"><span class="tag">Bilingual</span><span class="tag">Consumer</span><span class="tag">AI-assisted build</span></div>
+<div class="foot"><span><span class="star">★</span> Solo build</span><a href="https://fanready-2026.vercel.app">Visit ↗</a></div>
+</article>
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 10l9-6 9 6"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-5h4v5"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gakko AI</h4><p class="sub"><b>Hackathon</b> · [LOCATION] · [YEAR]</p></div>
+<span class="badge y">Hackathon</span>
+</div>
+<p class="body">Hackathon build: an AI prototype that automates admin work for K-12 teachers, built and validated solo in under 24 hours, then pitched to the Stanford finals.</p>
+<div class="tags"><span class="tag">AI prototype</span><span class="tag">K-12</span><span class="tag">24-hour build</span></div>
+<div class="foot"><span><span class="star">★</span> Stanford pitch top 30</span><span>◆ of 300+</span><a href="#">Read ›</a></div>
+</article>
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M8 3l-5 4 3 3 2-1v12h8V9l2 1 3-3-5-4c-1 2-2 3-4 3S9 5 8 3z"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Bhoomi</h4><p class="sub"><b>Founder, Create-X</b> · Atlanta · [YEAR]</p></div>
+<span class="badge y">Create-X</span>
+</div>
+<p class="body">B2B marketplace for sustainable fashion brands with an analytics layer that shows brands how to price and position.</p>
+<div class="tags"><span class="tag">Marketplace</span><span class="tag">Analytics</span><span class="tag">Fashion</span></div>
+<div class="foot"><span><span class="star">★</span> 50+ users</span><span>◆ 15 brands</span><a href="#">Read ›</a></div>
+</article>
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M20 12a8 8 0 0 1-14 5.3"></path><path d="M4 12a8 8 0 0 1 14-5.3"></path><path d="M18 3v4h-4M6 21v-4h4"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gaia</h4><p class="sub"><b>Cox Play with Purpose Hackathon</b> · Atlanta · [YEAR]</p></div>
+<span class="badge y">Hackathon</span>
+</div>
+<p class="body">Circular intake and recovery platform for DTC fashion brands handling returns and send-backs, with a Shopify-native integration model.</p>
+<div class="tags"><span class="tag">Circularity</span><span class="tag">Shopify</span><span class="tag">Returns</span></div>
+<div class="foot"><span><span class="star">★</span> Play with Purpose</span><a href="#">Read ›</a></div>
+</article>
+
+</div>
+</section>
+</div>
+
+<div data-group="lead">
+<section aria-labelledby="g3">
+<div class="sechead">
+<span class="disp" style="font-size: 72px; color: var(--accent)">03</span>
+<h3 id="g3" class="disp" style="font-size: clamp(36px, 6vw, 56px)">Campus &amp; Creative</h3>
+<p class="mono" style="margin: 0 0 8px auto; font-size: 13px; color: #4A4741">Events · partnerships · prints</p>
+</div>
+<div class="grid">
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">TechForward 2026</h4><p class="sub"><b>Georgia Tech Scheller</b> · Atlanta · 2026</p></div>
+<span class="badge">Nov 5–6</span>
+</div>
+<p class="body">Co-chairing Scheller's technology conference with the Georgia Tech Technology Club. I lead the student-led day, the TechTalks speaker lineup and a sustainability hackathon.</p>
+<div class="tags"><span class="tag">Events</span><span class="tag">Speakers</span><span class="tag">Hackathon</span></div>
+<div class="foot"><span><span class="star">★</span> ~150 attendees</span><span>◆ 2 days</span><a href="#">Read ›</a></div>
+</article>
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M2 12l4-4 4 2 4-2 4 4"></path><path d="M6 8v6l5 5 2-2 3 1 2-4"></path><path d="M10 10l4 4"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">EGCA Partnerships</h4><p class="sub"><b>Emory–Georgia Tech Consulting Club</b> · Atlanta · 2025</p></div>
+</div>
+<p class="body">Ran the full Summer 2025 consulting cycle: sourcing clients, matching students with a Tally, Airtable and LLM workflow, the kickoff deck and a closing gala.</p>
+<div class="tags"><span class="tag">Partnerships</span><span class="tag">Ops</span><span class="tag">Automation</span></div>
+<div class="foot"><span><span class="star">★</span> 4 clients</span><span>◆ Summer 2025</span><a href="#">Read ›</a></div>
+</article>
+
+<article class="card">
+<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 3c3 4 6 6 6 10a6 6 0 0 1-12 0c0-2 1-4 3-5 0 2 1 3 2 3 0-3-1-5 1-8z"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Agni Studios</h4><p class="sub"><b>Etsy shop</b> · [YEAR]</p></div>
+<span class="badge y">Shop</span>
+</div>
+<p class="body">Illustrated food culture prints with bilingual typography, in South Indian, Thai and Singapore series.</p>
+<div class="tags"><span class="tag">Illustration</span><span class="tag">Type</span><span class="tag">E-commerce</span></div>
+<div class="foot"><span><span class="star">★</span> 3 series</span><span>◆ Bilingual</span><a href="#">Visit ›</a></div>
+</article>
+
+</div>
+</section>
+</div>
+
+</div>
+
+<section id="path" aria-labelledby="path-title" style="max-width: 1280px; margin: 0 auto; padding: 72px 24px 40px">
+<div class="sechead">
+<h2 id="path-title" class="disp" style="font-size: 72px">The Path</h2>
+<p class="mono" style="margin: 0 0 10px auto; font-size: 13px; color: #4A4741">Latest first · Atlanta ← Singapore</p>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 28px">
+<li class="stat" style="display: flex; flex-direction: column; gap: 12px; background: var(--accent); color: #FFFFFF">
+<span class="mono" style="font-size: 12px">2025–2026 · Atlanta · Now</span>
+<p class="title" style="font-size: 28px">Georgia Tech</p>
+<p class="body" style="font-size: 16px">Executive MBA, Management of Technology, alongside the Brook Byers Institute and a voice AI research platform for the School of Modern Languages.</p>
+</li>
+<li class="stat" style="display: flex; flex-direction: column; gap: 12px">
+<span class="mono" style="font-size: 12px; color: #4A4741">2021–2025 · Singapore</span>
+<p class="title" style="font-size: 28px">Aon</p>
+<p class="body" style="font-size: 16px">Application Developer and Product Owner, then Senior Application Developer, Product and Platform Owner. Hired and led delivery teams.</p>
+</li>
+<li class="stat" style="display: flex; flex-direction: column; gap: 12px">
+<span class="mono" style="font-size: 12px; color: #4A4741">2015–2021 · Singapore</span>
+<p class="title" style="font-size: 28px">Denso Wave</p>
+<p class="body" style="font-size: 16px">Firmware engineer on PLCs. Built the test rig and led the validation and release team, peaking at 10.</p>
+</li>
+<li class="stat" style="display: flex; flex-direction: column; gap: 12px">
+<span class="mono" style="font-size: 12px; color: #4A4741">2011–2015 · Singapore</span>
+<p class="title" style="font-size: 28px">NTU</p>
+<p class="body" style="font-size: 16px">B.Eng (Hons), Electrical and Electronics Engineering.</p>
+</li>
+</ol>
+</section>
+
+<section id="toolkit" aria-labelledby="toolkit-title" style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 88px">
+<div class="sechead">
+<h2 id="toolkit-title" class="disp" style="font-size: 72px">Toolkit</h2>
+<p class="mono" style="margin: 0 0 10px auto; font-size: 13px; color: #4A4741">What I build with</p>
+</div>
+<div class="stat" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; padding: 28px; margin-bottom: 28px; background: #141414; color: #F1ECE1; box-shadow: 8px 8px 0 var(--accent)">
+<div style="flex: 1 1 280px; min-width: 0">
+<p class="mono" style="margin: 0 0 10px; font-size: 12px; color: #CFC8BA">Daily stack</p>
+<p class="title" style="font-size: 40px">I prototype with agentic coding tools every day.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 16px">
+<div style="border: 3px solid #F1ECE1; padding: 18px 14px; text-align: center; background: var(--accent)"><p class="disp" style="font-size: clamp(22px, 3vw, 30px); color: #FFFFFF">Claude Code</p></div>
+<div style="border: 3px solid #F1ECE1; padding: 18px 14px; text-align: center"><p class="disp" style="font-size: clamp(22px, 3vw, 30px)">Cursor</p></div>
+<div style="border: 3px solid #F1ECE1; padding: 18px 14px; text-align: center"><p class="disp" style="font-size: clamp(22px, 3vw, 30px)">Codex</p></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 28px">
+<div class="stat" style="display: flex; flex-direction: column; gap: 16px">
+<p class="title" style="font-size: 28px">AI</p>
+<div class="tags"><span class="tag">LLM evaluation</span><span class="tag">Prompt &amp; context eng.</span><span class="tag">RAG</span><span class="tag">Agentic workflows</span><span class="tag">Token / cost tradeoffs</span><span class="tag">NLP</span><span class="tag">LLaMA</span><span class="tag">Databricks</span></div>
+</div>
+<div class="stat" style="display: flex; flex-direction: column; gap: 16px">
+<p class="title" style="font-size: 28px">Data &amp; Engineering</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">TypeScript</span><span class="tag">Angular</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">C#/.NET</span><span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">GitLab CI/CD</span><span class="tag">Snowflake</span></div>
+</div>
+<div class="stat" style="display: flex; flex-direction: column; gap: 16px">
+<p class="title" style="font-size: 28px">Product</p>
+<div class="tags"><span class="tag">0→1 B2B</span><span class="tag">Roadmaps</span><span class="tag">Success metrics</span><span class="tag">Human-in-the-loop UX</span><span class="tag">User research</span><span class="tag">Lean Six Sigma</span></div>
+</div>
+</div>
+</section>
+
+<section id="contact" aria-labelledby="contact-title" style="border-top: 3px solid #141414; background: #141414; color: #F1ECE1">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end">
+<div style="flex: 999 1 560px; min-width: 0">
+<p class="mono" style="margin: 0 0 20px; font-size: 14px; color: #CFC8BA">Open to technical PM roles · AI products &amp; platforms</p>
+<h2 id="contact-title" class="disp" style="font-size: clamp(56px, 8vw, 112px)">Let's build<br><span style="color: #F2C230">the next one.</span></h2>
+</div>
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 18px">
+<a class="btn" href="mailto:akshayamk@gmail.com" style="border-color: #F1ECE1; box-shadow: 5px 5px 0 #F1ECE1">akshayamk@gmail.com</a>
+<a class="btn ghost" href="https://linkedin.com/in/akshayamk" style="border-color: #F1ECE1; box-shadow: 5px 5px 0 #F1ECE1">LinkedIn ↗</a>
+</div>
+</div>
+<div style="border-top: 2px solid #3A3833">
+<p class="mono" style="max-width: 1280px; margin: 0 auto; padding: 22px 24px; font-size: 12px; color: #CFC8BA">© 2026 Akshaya Mahesh Kumar · Built in Atlanta</p>
+</div>
+</section>
+</main>
+</div>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('[data-filter]').forEach(function (b) {
+      var on = b === btn; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('[data-group]').forEach(function (g) {
+      g.hidden = !(f === 'all' || g.getAttribute('data-group') === f);
+    });
+  });
+});
+</script>
+</body>
+</html>
