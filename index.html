@@ -30,6 +30,7 @@ a{color:#141414}a:hover{color:#5A5650}
 .badge{flex:none;align-self:flex-start;padding:4px 10px;background:var(--accent);color:#FFFFFF;border:2px solid #141414;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;box-shadow:3px 3px 0 #141414}
 .badge.y{background:#F2C230;color:#141414}
 .body{margin:0;font-size:17px;line-height:1.5}
+.body b,.body strong{font-weight:700 !important;color:#141414}
 .tags{display:flex;flex-wrap:wrap;gap:10px}
 .tag{padding:7px 12px;border:2px solid #141414;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;background:#F1ECE1}
 .foot{margin-top:auto;padding-top:16px;border-top:2px solid #BDB7AC;display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-weight:700;font-size:15px}
@@ -51,7 +52,7 @@ a{color:#141414}a:hover{color:#5A5650}
 .card:has(.media) > *{order:2}
 .card:has(.media) > :first-child{order:1}
 .card:has(.media) .media{margin-top:-18px}
-.card:has(.media) > .tags{order:0;justify-content:center;margin:-24px -24px 0;padding:20px 24px 6px;background-color:#E6E0D3;background-image:repeating-linear-gradient(45deg,rgba(20,20,20,0.06) 0 2px,transparent 2px 14px)}
+.card:has(.media) > .tags{order:0;justify-content:center;margin:-24px -24px 0;padding:20px 24px 20px;border-bottom:2px dashed #141414;background-color:#E6E0D3;background-image:repeating-linear-gradient(45deg,rgba(20,20,20,0.06) 0 2px,transparent 2px 14px)}
 .card .tag{border-width:3px;font-size:14px;padding:9px 14px;box-shadow:3px 3px 0 #141414;background:#FBF8F1;color:#141414}
 .card .tag:nth-child(5n+1){background:var(--accent);color:#FFFFFF}
 .card .tag:nth-child(5n+2){background:#F2C230}
@@ -156,7 +157,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Voice AI Research Platform</h4><p class="sub"><b>Georgia Tech, School of Modern Languages</b> · Atlanta · 2026–now</p></div>
 <span class="badge">Prototype</span>
 </div>
-<p class="body">Spoken German and English conversations with an AI persona locked in character, so researchers can measure how its style shapes participants' politeness, directness and apologies. One app: Gemini Live to prototype, self-hosted Qwen3-Omni on Georgia Tech GPUs for the study.</p>
+<p class="body">Spoken German and English conversations with an <b>AI persona locked in character</b>, so researchers can measure how its style shapes participants' politeness, directness and apologies. One app: Gemini Live to prototype, <b>self-hosted Qwen3-Omni</b> on Georgia Tech GPUs for the study.</p>
 <div class="tags"><span class="tag">Realtime voice</span><span class="tag">Persona control</span><span class="tag">Gemini Live</span><span class="tag">Qwen3-Omni</span><span class="tag">React / Node</span></div>
 <div class="foot"><span><span class="star">★</span> Persona locked per session</span><span>◆ 6 scenarios</span><span>◆ Live link soon</span>
 </article>
@@ -168,7 +169,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Grant Discovery Agent</h4><p class="sub"><b>Georgia Tech, Brook Byers Institute</b> · Atlanta · 2025–now</p></div>
 <span class="badge">In use</span>
 </div>
-<p class="body">Consolidates 1,000+ funding opportunities a week from Pivot. On demand, Gemini hunts for new NSF and DOE webinars, NOIs and RFIs, refreshes Grants.gov forecasts, and summarizes what's relevant. Discovery showed faculty ignored the dashboard, so I shipped matched alerts instead.</p>
+<p class="body">Consolidates <b>1,000+ funding opportunities a week</b> from Pivot. On demand, Gemini hunts for new NSF and DOE webinars, NOIs and RFIs, refreshes Grants.gov forecasts, and summarizes what's relevant. Discovery showed faculty ignored the dashboard, so I <b>shipped matched alerts instead</b>.</p>
 <div class="tags"><span class="tag">Agentic workflow</span><span class="tag">Gemini</span><span class="tag">Pivot API</span><span class="tag">Grants.gov</span><span class="tag">Customer discovery</span></div>
 <div class="foot"><span><span class="star">★</span> 1,000+ opportunities / week</span><span>◆ 100+ faculty</span><span>◆ Hours → minutes</span></div>
 </article>
@@ -180,7 +181,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">LLM Extraction PoC</h4><p class="sub"><b>Aon</b> · Singapore · 2023–2025</p></div>
 <span class="badge">AI</span>
 </div>
-<p class="body">Proved an LLM could replace our NLP extraction within enterprise limits on cost, storage and privacy. A self-hosted lite LLaMA on Databricks pulls the expected fields from documents chunked by where each field appears. It extracted accurately without fine-tuning, and I designed how it would be hosted, started daily and kept running on schedule.</p>
+<p class="body"><b>Proved an LLM could replace our NLP extraction</b> within enterprise limits on cost, storage and privacy. A self-hosted lite LLaMA on Databricks pulls the expected fields from documents chunked by where each field appears. It <b>extracted accurately without fine-tuning</b>, and I designed how it would be hosted, started daily and kept running on schedule.</p>
 <div class="tags"><span class="tag">LLaMA</span><span class="tag">Databricks</span><span class="tag">Self-hosted</span><span class="tag">Chunking</span><span class="tag">Privacy</span></div>
 <div class="foot"><span><span class="star">★</span> First to replace NLP</span><span>◆ Recommended to senior stakeholders</span></div>
 </article>
@@ -192,8 +193,9 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 20V4M4 20h16"></path><path d="M7 16l4-5 3 3 5-7"></path></svg></div>
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Actuarial Modeling Suite</h4><p class="sub"><b>Aon</b> · Singapore · 2023–2025</p></div>
+<span class="badge">Team lead</span>
 </div>
-<p class="body">US actuaries spent hours building risk models by hand in spreadsheets. I built the tools that replaced them: loss forecasting, collateral and total-cost-of-risk calculations, large-loss modeling, and benchmarking clients against their peers, with human review built in. Led a 2–3 person team to deliver it.</p>
+<p class="body">US actuaries spent hours building risk models by hand in spreadsheets. <b>I built the tools that replaced them</b>: loss forecasting, collateral and total-cost-of-risk calculations, large-loss modeling, and benchmarking clients against their peers, with human review built in. <b>Led a 2–3 person team</b> to deliver it.</p>
 <div class="tags"><span class="tag">Forecasting</span><span class="tag">Risk modeling</span><span class="tag">Benchmarking</span><span class="tag">Human-in-the-loop</span></div>
 <div class="foot"><span><span class="star">★</span> 1,000+ risk models</span><span>◆ Led a team of 2–3</span></div>
 </article>
@@ -203,8 +205,9 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div>
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Shared Component Library</h4><p class="sub"><b>Aon</b> · Singapore · 2023–2025</p></div>
+<span class="badge y">Platform</span>
 </div>
-<p class="body">Built reusable Angular components for the innovation center, including data tables, async command chaining and icons, so other teams didn't have to rebuild them. Three teams beyond mine built on them.</p>
+<p class="body">Built reusable Angular components for the innovation center, including data tables, async command chaining and icons, so other teams didn't have to rebuild them. <b>Three teams beyond mine</b> built on them.</p>
 <div class="tags"><span class="tag">Angular</span><span class="tag">Reusable UI</span><span class="tag">Platform thinking</span></div>
 <div class="foot"><span><span class="star">★</span> Adopted by 3 other teams</span></div>
 </article>
@@ -216,7 +219,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Quote Extraction Platform</h4><p class="sub"><b>Aon</b> · Singapore · 2021–2025</p></div>
 <span class="badge">0→1</span>
 </div>
-<p class="body">Every renewal meant hours of reading insurer quotes line by line. I took a single broker's prototype, architected it and built it end to end into the platform about 60% of Aon's US brokers used to turn those PDFs into verified data in minutes.</p>
+<p class="body">I joined Aon as a <b>foundational hire</b>. Every renewal meant hours of reading insurer quotes line by line. I took a single broker's prototype, <b>architected it and built it end to end</b> into the platform <b>about 60% of Aon's US brokers</b> used to turn those PDFs into verified data in minutes.</p>
 <div class="tags"><span class="tag">NLP</span><span class="tag">Full-stack</span><span class="tag">Architecture</span><span class="tag">Human-in-the-loop</span></div>
 <div class="foot"><span><span class="star">★</span> ~60% of US brokers</span><span>◆ Hours → minutes</span><span>◆ Gen 1, before the LLM</span></div>
 </article>
@@ -230,7 +233,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">PLC Firmware &amp; I/O Modules</h4><p class="sub"><b>Denso Wave</b> · Singapore · 2015–2021</p></div>
 <span class="badge">Foundational hire</span>
 </div>
-<p class="body">I joined Denso Wave Singapore as a foundational hire, with no firmware foundation to inherit. Over six years I wrote and owned the firmware for 6 industrial products, then carried it through every chip migration and a redesign of the real-time OS underneath.</p>
+<p class="body">I joined Denso Wave Singapore as a <b>foundational hire</b>, with no firmware foundation to inherit. Over six years I wrote and owned the firmware for <b>6 industrial products</b>, then carried it through every chip migration and a redesign of the real-time OS underneath.</p>
 <div class="tags"><span class="tag">C/C++</span><span class="tag">Python</span><span class="tag">UART</span><span class="tag">CAN</span><span class="tag">ADC / DAC</span><span class="tag">RTOS</span></div>
 <div class="foot"><span><span class="star">★</span> 6 products</span><span>◆ 6 years</span></div>
 </article>
@@ -242,7 +245,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Automated Test Rig</h4><p class="sub"><b>Denso Wave</b> · Singapore · 2015–2021</p></div>
 <span class="badge y">Foundation</span>
 </div>
-<p class="body">Every firmware release meant a month of manual functional testing. I built an automated test rig that cut it to a few days, and it became the foundation for testing every firmware product that followed. Early in my career, I led the 10-person validation and release team that ran it, owning project plans, resource allocation and staffing.</p>
+<p class="body">Every firmware release meant a month of manual functional testing. I built an automated test rig that <b>cut it to a few days</b>, and it became the foundation for testing every firmware product that followed. Early in my career, I <b>led the 10-person validation and release team</b> that ran it, owning project plans, resource allocation and staffing.</p>
 <div class="tags"><span class="tag">Test automation</span><span class="tag">Functional testing</span><span class="tag">Team lead</span><span class="tag">Project planning</span></div>
 <div class="foot"><span><span class="star">★</span> 1 month → a few days</span><span>◆ Led a team of 10</span><span>◆ Used on every new product</span></div>
 </article>
@@ -267,7 +270,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Verifee</h4><p class="sub"><b>Georgia Tech EMBA capstone</b> · Atlanta · 2026</p></div>
 <span class="badge">Live beta</span>
 </div>
-<p class="body">Applying to this MBA, I paid ~$200 and waited a week for a third party to interpret my accredited, English-language degree. So I built the platform: admissions uploads a transcript, AI extracts and maps every course to the school's own, and a reviewer sends an evidence-backed report with tamper-proof records on Solana. Built at a hackathon, it became our EMBA capstone.</p>
+<p class="body">Applying to this MBA, I <b>paid ~$200 and waited a week</b> for a third party to interpret my accredited, English-language degree. So I built the platform: admissions uploads a transcript, AI extracts and maps every course to the school's own, and a reviewer sends an evidence-backed report with tamper-proof records on Solana. Built at a hackathon, it <b>became our EMBA capstone</b>.</p>
 <div class="tags"><span class="tag">OpenAI</span><span class="tag">Prompt engineering</span><span class="tag">Chunking</span><span class="tag">Solana</span><span class="tag">Replit</span></div>
 <div class="foot"><span><span class="star">★</span> 14 early testers</span><span>◆ 7 countries</span><span>◆ 130 interviews across the capstone</span><a href="https://verifee.replit.app">Open app ↗</a><a href="verifee-pitch-deck.pdf" style="margin-left: 0">Pitch deck ↗</a></div>
 </article>
@@ -279,7 +282,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gakko</h4><p class="sub"><b>Georgia Tech EMBA capstone</b> · Atlanta · 2026</p></div>
 <span class="badge y">Pivoted</span>
 </div>
-<p class="body">I built the first prototype solo in 24 hours: an AI coordination layer for K-12 schools juggling about 25 disconnected systems. My capstone team of three then ran 115 interviews with principals, teachers and operations leads, judged the K-12 buying path too long to crack, and pivoted to Verifee.</p>
+<p class="body">I built the first prototype <b>solo in 24 hours</b>: an AI coordination layer for K-12 schools juggling about 25 disconnected systems. My capstone team of three then ran <b>115 interviews</b> with principals, teachers and operations leads, judged the K-12 buying path too long to crack, and <b>pivoted to Verifee</b>.</p>
 <div class="tags"><span class="tag">AI prototype</span><span class="tag">Customer discovery</span><span class="tag">K-12</span><span class="tag">Pivot</span></div>
 <div class="foot"><span><span class="star">★</span> 115 interviews</span><span>◆ Stanford pitch top 30 of 300+</span><span>◆ Pivoted to Verifee</span></div>
 </article>
@@ -291,7 +294,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Rabbit Hop</h4><p class="sub"><b>Solo exploration</b> · Atlanta · 2026</p></div>
 <span class="badge y">Experiment</span>
 </div>
-<p class="body">Can an AI agent make decisions like a specific kind of shopper, and can we prove it? I gave agents five researched personas, backed by 100 synthetic purchase histories, then had them browse Sephora and Olive Young pages and tracked how each one chose, step by step. A blind judge then guesses the persona from its choices and scores how consistent the runs are. The goal: test whether agents could stand in for early customer discovery.</p>
+<p class="body"><b>Can an AI agent make decisions like a specific kind of shopper, and can we prove it?</b> I gave agents five researched personas, backed by 100 synthetic purchase histories, then had them browse Sephora and Olive Young pages and tracked how each one chose, step by step. A <b>blind judge</b> then guesses the persona from its choices and scores how consistent the runs are. The goal: test whether agents could stand in for early customer discovery.</p>
 <div class="tags"><span class="tag">AI agents</span><span class="tag">Computer use</span><span class="tag">Playwright</span><span class="tag">Meta Muse Spark</span><span class="tag">Evaluation</span></div>
 <div class="foot"><span><span class="star">★</span> 5 personas</span><span>◆ 2 retailers</span><span>◆ Blind-judge evaluation</span><a href="https://youtu.be/WrzBsbKIycM">Watch demo ↗</a><a href="rabbit-hop-deck.pdf" style="margin-left: 0">Deck ↗</a><a href="https://github.com/akshayabuildsprojects-blip/rabbit-hop" style="margin-left: 0">Code ↗</a></div>
 </article>
@@ -303,7 +306,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">FanReady 2026</h4><p class="sub"><b>Solo build</b> · Atlanta · 2026</p></div>
 <span class="badge">Live</span>
 </div>
-<p class="body">It was my first time living in a World Cup host city, so I built the app I wanted as a fan. FanReady scores all 16 host cities on matchday friction, from stadiums miles from downtown with no rail to heat and scam risk, and builds each fan a personal brief for lodging, transport and exit timing, in English or Spanish. Built solo in 8 days, live by the opening match.</p>
+<p class="body">It was my first time living in a World Cup host city, so I built the app I wanted as a fan. FanReady scores <b>all 16 host cities</b> on matchday friction, from stadiums miles from downtown with no rail to heat and scam risk, and builds each fan a personal brief for lodging, transport and exit timing, in English or Spanish. <b>Built solo in 8 days</b>, live by the opening match.</p>
 <div class="tags"><span class="tag">React</span><span class="tag">PWA</span><span class="tag">English / Spanish</span><span class="tag">Cursor</span></div>
 <div class="foot"><span><span class="star">★</span> 16 host cities</span><span>◆ Shipped in 8 days</span><a href="https://fanready-2026.vercel.app">Visit ↗</a></div>
 </article>
@@ -315,7 +318,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Bhoomi</h4><p class="sub"><b>Co-founder</b> · Atlanta · 2026</p></div>
 <span class="badge y">Create-X</span>
 </div>
-<p class="body">Small, sustainable brands, often with lean inventory or curated vintage, make most of their sales at Atlanta pop-ups and struggle to sell online. We set out to build a marketplace, then 80+ interviews showed the real pain was selling beyond the pop-up. So we pivoted to brand tools first: upload once, publish everywhere, and a QR storefront at the booth. Paused while I focus on my capstone.</p>
+<p class="body">Small, sustainable brands, often with lean inventory or curated vintage, make most of their sales at Atlanta pop-ups and struggle to sell online. We set out to build a marketplace, then <b>80+ interviews</b> showed the real pain was selling beyond the pop-up. So we <b>pivoted to brand tools first</b>: upload once, publish everywhere, and a QR storefront at the booth. Paused while I focus on my capstone.</p>
 <div class="tags"><span class="tag">Marketplace</span><span class="tag">Customer discovery</span><span class="tag">MVP</span><span class="tag">Creator tools</span></div>
 <div class="foot"><span><span class="star">★</span> 80+ interviews</span><span>◆ Create-X, Summer 2026</span><span>◆ Paused</span><a href="bhoomi-pitch-deck.pdf">Pitch deck ↗</a></div>
 </article>
@@ -327,7 +330,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gaia</h4><p class="sub"><b>Cox Play with Purpose Hackathon</b> · Atlanta · 2026</p></div>
 <span class="badge y">Hackathon</span>
 </div>
-<p class="body">A returns management system for fashion brands. Each return is routed across logistics nodes to its best next life: restock, archive resale, a vintage partner or brand reuse, so fewer returns go to waste. I built the customer return portal and the brand dashboard solo, designed to plug into Shopify.</p>
+<p class="body">A returns management system for fashion brands. Each return is routed across logistics nodes to its <b>best next life</b>: restock, archive resale, a vintage partner or brand reuse, so fewer returns go to waste. I built the customer return portal and the brand dashboard <b>solo</b>, designed to plug into Shopify.</p>
 <div class="tags"><span class="tag">Next.js</span><span class="tag">Circularity</span><span class="tag">Shopify</span><span class="tag">Operations</span></div>
 <div class="foot"><span><span class="star">★</span> Solo build</span><span>◆ June 2026</span><a href="https://gaia-hackathon.vercel.app">Live demo ↗</a><a href="gaia-pitch-deck.pdf" style="margin-left: 0">Pitch deck ↗</a></div>
 </article>
@@ -349,10 +352,10 @@ a{color:#141414}a:hover{color:#5A5650}
 <div class="media schem" role="img" aria-label="About 160 attendees, 40 speakers, AI Impact Hackathon"><div class="flow"><div class="node hi" style="font-size: 20px; padding: 10px 14px">~160<br><span style="font-size: 11px; background: transparent; border: 0; padding: 0">attendees</span></div><div class="node" style="font-size: 20px; padding: 10px 14px">40<br><span style="font-size: 11px; background: transparent; border: 0; padding: 0">speakers</span></div></div><div class="flow"><div class="node dim">AI Impact Hackathon</div></div></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"></path></svg></div>
-<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">TechForward 2026</h4><p class="sub"><b>Georgia Tech Scheller</b> · Atlanta · 2026</p></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">TechForward 2026</h4><p class="sub"><b>Co-chair</b> · Georgia Tech Scheller · Atlanta · 2026</p></div>
 <span class="badge">Co-chair</span>
 </div>
-<p class="body">I co-led Georgia Tech Scheller's fully student-led technology conference, owning every part of it with my co-chair: funding, speakers, the hackathon and operations. I brought in additional funding and a large share of our 40 speakers, facilitated an AI Impact Hackathon on a problem set by the nonprofit Atlanta Tech Bank, and moderated a panel with a cybersecurity leader. About 160 people attended, and both speakers and attendees were up on previous years.</p>
+<p class="body">As co-chair, <b>I led</b> Georgia Tech Scheller's fully student-led technology conference end to end: funding, speakers, the hackathon and operations. I brought in additional funding and a large share of our 40 speakers, facilitated an AI Impact Hackathon on a problem set by the nonprofit Atlanta Tech Bank, and moderated a panel with a cybersecurity leader. <b>About 160 people attended</b>, and both speakers and attendees were <b>up on previous years</b>.</p>
 <div class="tags"><span class="tag">Events</span><span class="tag">Fundraising</span><span class="tag">Speaker sourcing</span><span class="tag">Hackathon</span><span class="tag">Operations</span></div>
 <div class="foot"><span><span class="star">★</span> ~160 attendees</span><span>◆ 40 speakers</span><span>◆ Up on previous years</span><a href="https://www.scheller.gatech.edu/events/techforward/index.html">Event site ↗</a></div>
 </article>
@@ -364,7 +367,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">EGCA Partnerships</h4><p class="sub"><b>Founding Director of External Affairs</b> · Atlanta · 2026–now</p></div>
 <span class="badge y">Partnerships</span>
 </div>
-<p class="body">I bring in the real-world projects for the Emory–Georgia Tech Consulting Club, which puts students from both schools on joint client teams. As founding Director of External Affairs, I source the clients and act as their point of contact, with collaborators including Penny Pickup, Roots Down, Georgia Tech Create-X and B Lab US &amp; Canada. Since the club launched in January 2026, I've brought in projects for three cycles, with 20 to 40 students each semester.</p>
+<p class="body">I bring in the real-world projects for the Emory–Georgia Tech Consulting Club, which puts students from both schools on joint client teams. As <b>founding Director of External Affairs</b>, I source the clients and act as their point of contact, with collaborators including Penny Pickup, Roots Down, Georgia Tech Create-X and B Lab US &amp; Canada. Since the club launched in January 2026, I've brought in projects for <b>three cycles</b>, with 20 to 40 students each semester.</p>
 <div class="tags"><span class="tag">Partnerships</span><span class="tag">Client sourcing</span><span class="tag">Stakeholder management</span><span class="tag">Experiential learning</span></div>
 <div class="foot"><span><span class="star">★</span> 3 cycles</span><span>◆ 20–40 students / semester</span><span>◆ Emory + Georgia Tech teams</span></div>
 </article>
@@ -443,7 +446,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <h2 id="contact-title" class="disp" style="font-size: clamp(56px, 8vw, 112px)">Let's build<br><span style="color: #F2C230">the next one.</span></h2>
 </div>
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 18px">
-<a class="btn" href="mailto:akshayamk@gmail.com" style="border-color: #F1ECE1; box-shadow: 5px 5px 0 #F1ECE1">akshayamk@gmail.com</a>
+<a class="btn" href="#contact" data-contact style="border-color: #F1ECE1; box-shadow: 5px 5px 0 #F1ECE1">Contact ↗</a>
 <a class="btn ghost" href="https://linkedin.com/in/akshayamk" style="border-color: #F1ECE1; box-shadow: 5px 5px 0 #F1ECE1">LinkedIn ↗</a>
 </div>
 </div>
@@ -454,6 +457,9 @@ a{color:#141414}a:hover{color:#5A5650}
 </main>
 </div>
 <script>
+document.querySelectorAll('[data-contact]').forEach(function (a) {
+  a.addEventListener('click', function (e) { e.preventDefault(); window.location.href = 'mailto:' + ['akshayamk', 'gmail.com'].join('@'); });
+});
 document.querySelectorAll('[data-filter]').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var f = btn.getAttribute('data-filter');
