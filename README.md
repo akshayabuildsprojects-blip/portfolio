@@ -12,11 +12,8 @@ Open this folder in Claude Code and paste:
 
 Search `index.html` for these:
 
-- `[YOUR` + `PHOTO]`: profile card photo placeholder
 - `Résumé ↓` button: `href="#"`, link it to your résumé PDF once it's in this folder
-- `data-todo="verifee-link"`: Verifee "Open app" link
 - `Live link soon`: Voice AI Research Platform, swap for the deployed link
-- `[YEAR]` and `[LOCATION]`: Gakko AI, Bhoomi, Gaia, Agni Studios subtitles
 - `Read ›` and `Visit ›` links with `href="#"` on the remaining venture and campus cards
 - `[Screenshot or deck cover]`: image slots on cards without a schematic
 

@@ -48,6 +48,16 @@ a{color:#141414}a:hover{color:#5A5650}
 .node.dim{background:transparent;border-style:dashed;color:#4A4741}
 .arr{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14px}
 .nda{position:absolute;left:10px;bottom:6px;margin:0;font-size:10px;color:#4A4741}
+.card:has(.media) > *{order:2}
+.card:has(.media) > :first-child{order:1}
+.card:has(.media) .media{margin-top:-18px}
+.card:has(.media) > .tags{order:0;justify-content:center;margin:-24px -24px 0;padding:20px 24px 6px;background-color:#E6E0D3;background-image:repeating-linear-gradient(45deg,rgba(20,20,20,0.06) 0 2px,transparent 2px 14px)}
+.card .tag{border-width:3px;font-size:14px;padding:9px 14px;box-shadow:3px 3px 0 #141414;background:#FBF8F1;color:#141414}
+.card .tag:nth-child(5n+1){background:var(--accent);color:#FFFFFF}
+.card .tag:nth-child(5n+2){background:#F2C230}
+.card .tag:nth-child(5n+3){background:#8FE3B0}
+.card .tag:nth-child(5n+4){background:#FF9EC4}
+.card .tag:nth-child(5n+5){background:#C7B5FF}
 .navlink{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
 </style>
 </head>
@@ -84,8 +94,8 @@ a{color:#141414}a:hover{color:#5A5650}
 
 <aside class="card" style="flex: 1 1 340px; max-width: 440px; transform: rotate(1.5deg)" aria-label="Profile card">
 <div style="display: flex; gap: 18px; align-items: center">
-<div class="icon" style="width: 96px; height: 96px">
-<span class="mono" style="font-size: 11px; background: #FBF8F1; padding: 4px 6px; text-align: center">[YOUR<br>PHOTO]</span>
+<div style="flex: none; width: 96px; height: 96px; border: 3px solid #141414; overflow: hidden">
+<img src="photo.jpg" alt="Akshaya Mahesh Kumar" style="width: 100%; height: 100%; object-fit: cover; display: block">
 </div>
 <div>
 <p class="title" style="font-size: 34px">Akshaya Mahesh Kumar</p>
@@ -120,7 +130,7 @@ a{color:#141414}a:hover{color:#5A5650}
 <button type="button" class="chip on" aria-pressed="true" data-filter="all"><span>All · 16</span></button>
 <button type="button" class="chip" aria-pressed="false" data-filter="product"><span>Product &amp; AI</span></button>
 <button type="button" class="chip" aria-pressed="false" data-filter="ventures"><span>Builds &amp; Ventures</span></button>
-<button type="button" class="chip" aria-pressed="false" data-filter="lead"><span>Campus &amp; Creative</span></button>
+<button type="button" class="chip" aria-pressed="false" data-filter="lead"><span>Campus Leadership</span></button>
 
 </div>
 </div>
@@ -251,63 +261,75 @@ a{color:#141414}a:hover{color:#5A5650}
 <div class="grid">
 
 <article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div class="media schem" role="img" aria-label="Flow: upload, extract, review, map, report, send with proof"><div class="flow"><div class="node">Upload</div><div class="arr" aria-hidden="true">→</div><div class="node">Extract</div><div class="arr" aria-hidden="true">→</div><div class="node">Review</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node">Map</div><div class="arr" aria-hidden="true">→</div><div class="node">Report</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Send with proof</div></div><p class="nda mono">Live beta</p></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 13l2 2 4-4"></path></svg></div>
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Verifee</h4><p class="sub"><b>Georgia Tech EMBA capstone</b> · Atlanta · 2026</p></div>
-<span class="badge">Capstone</span>
+<span class="badge">Live beta</span>
 </div>
-<p class="body">My capstone for the Georgia Tech Executive MBA. Preliminary transcript verification for admissions: NLP parses an applicant's PDF transcript, maps courses to the target school, runs a gap analysis and anchors record metadata on Solana for tamper evidence.</p>
-<div class="tags"><span class="tag">Admissions</span><span class="tag">NLP</span><span class="tag">Blockchain</span></div>
-<div class="foot"><span><span class="star">★</span> Building now</span><span>◆ GT + Vanderbilt interviews</span><a href="#" data-todo="verifee-link">Open app ↗</a></div>
+<p class="body">Applying to this MBA, I paid ~$200 and waited a week for a third party to interpret my accredited, English-language degree. So I built the platform: admissions uploads a transcript, AI extracts and maps every course to the school's own, and a reviewer sends an evidence-backed report with tamper-proof records on Solana. Built at a hackathon, it became our EMBA capstone.</p>
+<div class="tags"><span class="tag">OpenAI</span><span class="tag">Prompt engineering</span><span class="tag">Chunking</span><span class="tag">Solana</span><span class="tag">Replit</span></div>
+<div class="foot"><span><span class="star">★</span> 14 early testers</span><span>◆ 7 countries</span><span>◆ 130 interviews across the capstone</span><a href="https://verifee.replit.app">Open app ↗</a><a href="verifee-pitch-deck.pdf" style="margin-left: 0">Pitch deck ↗</a></div>
 </article>
 
 <article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div class="media schem" role="img" aria-label="Flow: 24-hour prototype, 115 interviews, pivot, Verifee"><div class="flow"><div class="node">24-hour<br>prototype</div><div class="arr" aria-hidden="true">→</div><div class="node">115<br>interviews</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node dim">Pivot</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Verifee</div></div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 10l9-6 9 6"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-5h4v5"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gakko</h4><p class="sub"><b>Georgia Tech EMBA capstone</b> · Atlanta · 2026</p></div>
+<span class="badge y">Pivoted</span>
+</div>
+<p class="body">I built the first prototype solo in 24 hours: an AI coordination layer for K-12 schools juggling about 25 disconnected systems. My capstone team of three then ran 115 interviews with principals, teachers and operations leads, judged the K-12 buying path too long to crack, and pivoted to Verifee.</p>
+<div class="tags"><span class="tag">AI prototype</span><span class="tag">Customer discovery</span><span class="tag">K-12</span><span class="tag">Pivot</span></div>
+<div class="foot"><span><span class="star">★</span> 115 interviews</span><span>◆ Stanford pitch top 30 of 300+</span><span>◆ Pivoted to Verifee</span></div>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Flow: persona and purchase history, plan search, browse retailer pages, choices with reasons, blind judge"><div class="flow"><div class="node">Persona +<br>purchase history</div><div class="arr" aria-hidden="true">→</div><div class="node">Plan<br>search</div><div class="arr" aria-hidden="true">→</div><div class="node">Browse<br>retailer pages</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node">Choices<br>with reasons</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Blind judge</div></div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M5 3l14 7-6 2-2 6z"></path><path d="M13 12l6 6"></path></svg></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Rabbit Hop</h4><p class="sub"><b>Solo exploration</b> · Atlanta · 2026</p></div>
+<span class="badge y">Experiment</span>
+</div>
+<p class="body">Can an AI agent make decisions like a specific kind of shopper, and can we prove it? I gave agents five researched personas, backed by 100 synthetic purchase histories, then had them browse Sephora and Olive Young pages and tracked how each one chose, step by step. A blind judge then guesses the persona from its choices and scores how consistent the runs are. The goal: test whether agents could stand in for early customer discovery.</p>
+<div class="tags"><span class="tag">AI agents</span><span class="tag">Computer use</span><span class="tag">Playwright</span><span class="tag">Meta Muse Spark</span><span class="tag">Evaluation</span></div>
+<div class="foot"><span><span class="star">★</span> 5 personas</span><span>◆ 2 retailers</span><span>◆ Blind-judge evaluation</span><a href="https://youtu.be/WrzBsbKIycM">Watch demo ↗</a><a href="rabbit-hop-deck.pdf" style="margin-left: 0">Deck ↗</a><a href="https://github.com/akshayabuildsprojects-blip/rabbit-hop" style="margin-left: 0">Code ↗</a></div>
+</article>
+
+<article class="card">
+<div class="media schem" role="img" aria-label="Flow: pick your matches, city friction index across 16 cities, personal readiness brief covering transport, heat, lodging and exit timing"><div class="flow"><div class="node">Pick your<br>matches</div><div class="arr" aria-hidden="true">→</div><div class="node">City friction index<br>16 cities</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node hi">Personal readiness brief</div></div><div class="flow"><div class="node dim">Transport</div><div class="node dim">Heat</div><div class="node dim">Lodging</div><div class="node dim">Exit timing</div></div></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7l4 3-1.5 4.5h-5L8 10z"></path><path d="M12 3v4M21 10l-5 0M3 10h5M9.5 14.5L7 19M14.5 14.5L17 19"></path></svg></div>
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">FanReady 2026</h4><p class="sub"><b>Solo build</b> · Atlanta · 2026</p></div>
 <span class="badge">Live</span>
 </div>
-<p class="body">Bilingual World Cup matchday-planning app, designed and shipped solo.</p>
-<div class="tags"><span class="tag">Bilingual</span><span class="tag">Consumer</span><span class="tag">AI-assisted build</span></div>
-<div class="foot"><span><span class="star">★</span> Solo build</span><a href="https://fanready-2026.vercel.app">Visit ↗</a></div>
+<p class="body">It was my first time living in a World Cup host city, so I built the app I wanted as a fan. FanReady scores all 16 host cities on matchday friction, from stadiums miles from downtown with no rail to heat and scam risk, and builds each fan a personal brief for lodging, transport and exit timing, in English or Spanish. Built solo in 8 days, live by the opening match.</p>
+<div class="tags"><span class="tag">React</span><span class="tag">PWA</span><span class="tag">English / Spanish</span><span class="tag">Cursor</span></div>
+<div class="foot"><span><span class="star">★</span> 16 host cities</span><span>◆ Shipped in 8 days</span><a href="https://fanready-2026.vercel.app">Visit ↗</a></div>
 </article>
 
 <article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
-<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 10l9-6 9 6"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-5h4v5"></path></svg></div>
-<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gakko AI</h4><p class="sub"><b>Hackathon</b> · [LOCATION] · [YEAR]</p></div>
-<span class="badge y">Hackathon</span>
-</div>
-<p class="body">Hackathon build: an AI prototype that automates admin work for K-12 teachers, built and validated solo in under 24 hours, then pitched to the Stanford finals.</p>
-<div class="tags"><span class="tag">AI prototype</span><span class="tag">K-12</span><span class="tag">24-hour build</span></div>
-<div class="foot"><span><span class="star">★</span> Stanford pitch top 30</span><span>◆ of 300+</span><a href="#">Read ›</a></div>
-</article>
-
-<article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div class="media schem" role="img" aria-label="Flow: upload once, publish everywhere, pop-up QR storefront, track leads and sales"><div class="flow"><div class="node">Upload<br>once</div><div class="arr" aria-hidden="true">→</div><div class="node">Publish<br>everywhere</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node">Pop-up QR<br>storefront</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Track leads<br>/ sales</div></div></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M8 3l-5 4 3 3 2-1v12h8V9l2 1 3-3-5-4c-1 2-2 3-4 3S9 5 8 3z"></path></svg></div>
-<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Bhoomi</h4><p class="sub"><b>Founder, Create-X</b> · Atlanta · [YEAR]</p></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Bhoomi</h4><p class="sub"><b>Co-founder</b> · Atlanta · 2026</p></div>
 <span class="badge y">Create-X</span>
 </div>
-<p class="body">B2B marketplace for sustainable fashion brands with an analytics layer that shows brands how to price and position.</p>
-<div class="tags"><span class="tag">Marketplace</span><span class="tag">Analytics</span><span class="tag">Fashion</span></div>
-<div class="foot"><span><span class="star">★</span> 50+ users</span><span>◆ 15 brands</span><a href="#">Read ›</a></div>
+<p class="body">Small, sustainable brands, often with lean inventory or curated vintage, make most of their sales at Atlanta pop-ups and struggle to sell online. We set out to build a marketplace, then 80+ interviews showed the real pain was selling beyond the pop-up. So we pivoted to brand tools first: upload once, publish everywhere, and a QR storefront at the booth. Paused while I focus on my capstone.</p>
+<div class="tags"><span class="tag">Marketplace</span><span class="tag">Customer discovery</span><span class="tag">MVP</span><span class="tag">Creator tools</span></div>
+<div class="foot"><span><span class="star">★</span> 80+ interviews</span><span>◆ Create-X, Summer 2026</span><span>◆ Paused</span><a href="bhoomi-pitch-deck.pdf">Pitch deck ↗</a></div>
 </article>
 
 <article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div class="media schem" role="img" aria-label="Flow: customer return, condition check, route across nodes to restock, archive resale, vintage partners or reuse, then circularity reporting"><div class="flow"><div class="node">Customer<br>return</div><div class="arr" aria-hidden="true">→</div><div class="node">Condition<br>check</div><div class="arr" aria-hidden="true">→</div><div class="node">Route across<br>nodes</div></div><div class="flow"><div class="node dim">Restock</div><div class="node dim">Archive resale</div><div class="node dim">Vintage partners</div><div class="node dim">Reuse</div></div><div class="flow"><div class="arr" aria-hidden="true">→</div><div class="node hi">Circularity reporting</div></div><p class="nda mono">Demo uses sample data</p></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M20 12a8 8 0 0 1-14 5.3"></path><path d="M4 12a8 8 0 0 1 14-5.3"></path><path d="M18 3v4h-4M6 21v-4h4"></path></svg></div>
-<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gaia</h4><p class="sub"><b>Cox Play with Purpose Hackathon</b> · Atlanta · [YEAR]</p></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Gaia</h4><p class="sub"><b>Cox Play with Purpose Hackathon</b> · Atlanta · 2026</p></div>
 <span class="badge y">Hackathon</span>
 </div>
-<p class="body">Circular intake and recovery platform for DTC fashion brands handling returns and send-backs, with a Shopify-native integration model.</p>
-<div class="tags"><span class="tag">Circularity</span><span class="tag">Shopify</span><span class="tag">Returns</span></div>
-<div class="foot"><span><span class="star">★</span> Play with Purpose</span><a href="#">Read ›</a></div>
+<p class="body">A returns management system for fashion brands. Each return is routed across logistics nodes to its best next life: restock, archive resale, a vintage partner or brand reuse, so fewer returns go to waste. I built the customer return portal and the brand dashboard solo, designed to plug into Shopify.</p>
+<div class="tags"><span class="tag">Next.js</span><span class="tag">Circularity</span><span class="tag">Shopify</span><span class="tag">Operations</span></div>
+<div class="foot"><span><span class="star">★</span> Solo build</span><span>◆ June 2026</span><a href="https://gaia-hackathon.vercel.app">Live demo ↗</a><a href="gaia-pitch-deck.pdf" style="margin-left: 0">Pitch deck ↗</a></div>
 </article>
 
 </div>
@@ -318,44 +340,33 @@ a{color:#141414}a:hover{color:#5A5650}
 <section aria-labelledby="g3">
 <div class="sechead">
 <span class="disp" style="font-size: 72px; color: var(--accent)">03</span>
-<h3 id="g3" class="disp" style="font-size: clamp(36px, 6vw, 56px)">Campus &amp; Creative</h3>
-<p class="mono" style="margin: 0 0 8px auto; font-size: 13px; color: #4A4741">Events · partnerships · prints</p>
+<h3 id="g3" class="disp" style="font-size: clamp(36px, 6vw, 56px)">Campus Leadership</h3>
+<p class="mono" style="margin: 0 0 8px auto; font-size: 13px; color: #4A4741">Georgia Tech · Emory</p>
 </div>
 <div class="grid">
 
 <article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div class="media schem" role="img" aria-label="About 160 attendees, 40 speakers, AI Impact Hackathon"><div class="flow"><div class="node hi" style="font-size: 20px; padding: 10px 14px">~160<br><span style="font-size: 11px; background: transparent; border: 0; padding: 0">attendees</span></div><div class="node" style="font-size: 20px; padding: 10px 14px">40<br><span style="font-size: 11px; background: transparent; border: 0; padding: 0">speakers</span></div></div><div class="flow"><div class="node dim">AI Impact Hackathon</div></div></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"></path></svg></div>
 <div style="flex: 1 1 170px; min-width: 0"><h4 class="title">TechForward 2026</h4><p class="sub"><b>Georgia Tech Scheller</b> · Atlanta · 2026</p></div>
-<span class="badge">Nov 5–6</span>
+<span class="badge">Co-chair</span>
 </div>
-<p class="body">Co-chairing Scheller's technology conference with the Georgia Tech Technology Club. I lead the student-led day, the TechTalks speaker lineup and a sustainability hackathon.</p>
-<div class="tags"><span class="tag">Events</span><span class="tag">Speakers</span><span class="tag">Hackathon</span></div>
-<div class="foot"><span><span class="star">★</span> ~150 attendees</span><span>◆ 2 days</span><a href="#">Read ›</a></div>
+<p class="body">I co-led Georgia Tech Scheller's fully student-led technology conference, owning every part of it with my co-chair: funding, speakers, the hackathon and operations. I brought in additional funding and a large share of our 40 speakers, facilitated an AI Impact Hackathon on a problem set by the nonprofit Atlanta Tech Bank, and moderated a panel with a cybersecurity leader. About 160 people attended, and both speakers and attendees were up on previous years.</p>
+<div class="tags"><span class="tag">Events</span><span class="tag">Fundraising</span><span class="tag">Speaker sourcing</span><span class="tag">Hackathon</span><span class="tag">Operations</span></div>
+<div class="foot"><span><span class="star">★</span> ~160 attendees</span><span>◆ 40 speakers</span><span>◆ Up on previous years</span><a href="https://www.scheller.gatech.edu/events/techforward/index.html">Event site ↗</a></div>
 </article>
 
 <article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
+<div class="media schem" role="img" aria-label="Flow: clients to EGCA to joint Emory and Georgia Tech student teams"><div class="flow"><div class="node">Clients</div><div class="arr" aria-hidden="true">→</div><div class="node">EGCA</div><div class="arr" aria-hidden="true">→</div><div class="node hi">Joint Emory +<br>Georgia Tech teams</div></div><div class="flow"><div class="node dim">Spring 2026</div><div class="node dim">Summer 2026</div><div class="node dim">Fall 2026</div></div></div>
 <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
 <div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M2 12l4-4 4 2 4-2 4 4"></path><path d="M6 8v6l5 5 2-2 3 1 2-4"></path><path d="M10 10l4 4"></path></svg></div>
-<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">EGCA Partnerships</h4><p class="sub"><b>Emory–Georgia Tech Consulting Club</b> · Atlanta · 2025</p></div>
+<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">EGCA Partnerships</h4><p class="sub"><b>Founding Director of External Affairs</b> · Atlanta · 2026–now</p></div>
+<span class="badge y">Partnerships</span>
 </div>
-<p class="body">Ran the full Summer 2025 consulting cycle: sourcing clients, matching students with a Tally, Airtable and LLM workflow, the kickoff deck and a closing gala.</p>
-<div class="tags"><span class="tag">Partnerships</span><span class="tag">Ops</span><span class="tag">Automation</span></div>
-<div class="foot"><span><span class="star">★</span> 4 clients</span><span>◆ Summer 2025</span><a href="#">Read ›</a></div>
-</article>
-
-<article class="card">
-<div class="media"><span class="mono">[Screenshot or deck cover]</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
-<div class="icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 3c3 4 6 6 6 10a6 6 0 0 1-12 0c0-2 1-4 3-5 0 2 1 3 2 3 0-3-1-5 1-8z"></path></svg></div>
-<div style="flex: 1 1 170px; min-width: 0"><h4 class="title">Agni Studios</h4><p class="sub"><b>Etsy shop</b> · [YEAR]</p></div>
-<span class="badge y">Shop</span>
-</div>
-<p class="body">Illustrated food culture prints with bilingual typography, in South Indian, Thai and Singapore series.</p>
-<div class="tags"><span class="tag">Illustration</span><span class="tag">Type</span><span class="tag">E-commerce</span></div>
-<div class="foot"><span><span class="star">★</span> 3 series</span><span>◆ Bilingual</span><a href="#">Visit ›</a></div>
+<p class="body">I bring in the real-world projects for the Emory–Georgia Tech Consulting Club, which puts students from both schools on joint client teams. As founding Director of External Affairs, I source the clients and act as their point of contact, with collaborators including Penny Pickup, Roots Down, Georgia Tech Create-X and B Lab US &amp; Canada. Since the club launched in January 2026, I've brought in projects for three cycles, with 20 to 40 students each semester.</p>
+<div class="tags"><span class="tag">Partnerships</span><span class="tag">Client sourcing</span><span class="tag">Stakeholder management</span><span class="tag">Experiential learning</span></div>
+<div class="foot"><span><span class="star">★</span> 3 cycles</span><span>◆ 20–40 students / semester</span><span>◆ Emory + Georgia Tech teams</span></div>
 </article>
 
 </div>
